@@ -211,6 +211,9 @@ section { padding: 90px 5%; }
   gap: 24px;
 }
 .service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: var(--cream);
   border: 1px solid rgba(90,122,58,.10);
   border-radius: 20px; padding: 32px 28px;
@@ -232,7 +235,11 @@ section { padding: 90px 5%; }
   font-size: 1.1rem; font-weight: 600;
   color: var(--dark); margin-bottom: 8px;
 }
-.service-card p { font-size: .88rem; color: var(--muted); line-height: 1.65; }
+.service-card p { font-size: .88rem; color: var(--muted); line-height: 1.65; margin-bottom: 24px; }
+.service-card .btn-outline {
+  margin-top: auto;
+  align-self: flex-start;
+}
 
 /* ── WHY US ────────────────────────────────────── */
 #why { background: var(--olive); color: white; }
