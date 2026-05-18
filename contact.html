@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact Olive Dental Care in Gokarneshwor, Kathmandu to book an appointment or ask about services, opening hours, and location."/>
+  <meta name="robots" content="index, follow"/>
+  <title>Contact | Olive Dental Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo.png" alt="Olive Dental Care Logo"/>
+    <div class="nav-logo-text">
+      <strong>Olive Dental Care</strong>
+    </div>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="why-us.html">Why Us</a></li>
+    <li><a href="team.html">Our Doctor</a></li>
+    <li><a href="contact.html" class="nav-cta">Book Appointment</a></li>
+  </ul>
+</nav>
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">Gokarneshwor, Kathmandu</div>
+      <h1>Book an Appointment</h1>
+      <p>Reach out to schedule a visit or ask us anything. We're always happy to hear from you.</p>
+      <div class="hero-actions">
+        <a href="index.html" class="btn-outline">Return Home</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="reveal">
+      <span class="section-label">Get in Touch</span>
+      <h2 class="section-title">Book an Appointment</h2>
+      <p class="section-sub">Reach out to schedule a visit or ask us anything. We're always happy to hear from you.</p>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <h3>Visit Us</h3>
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <h5>Address</h5>
+            <address>Gokarneshwor-8, Kathmandu<br/>Bagmati Province, Nepal</address>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <h5>Phone</h5>
+            <p>
+              <a href="tel:+97701XXXXXXX">+977-9863314714</a><br/>
+              <a href="tel:+9779XXXXXXXXX">+977-9843489761</a>
+            </p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div>
+            <h5>Email</h5>
+            <p><a href="mailto:olivedental2026@gmail.com">olivedental2026@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">🕐</div>
+          <div>
+            <h5>Opening Hours</h5>
+            <table class="hours-table">
+              <tr><td>Sunday – Saturday</td></tr>
+              <tr><td>9:00 AM – 7:00 PM</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="map-wrap reveal">
+          <span>🗺️</span>
+          <p>Gokarneshwor-8, Kathmandu, Nepal</p>
+          <a href="https://maps.app.goo.gl/W4mNRPkaabusVkdQ7" target="_blank" rel="noopener">
+            View on Google Maps →
+          </a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="contact-form" id="appt-form">
+          <div class="form-row">
+            <input type="text" placeholder="Your Full Name *" id="f-name" required/>
+            <input type="tel" placeholder="Phone Number *" id="f-phone" required/>
+          </div>
+          <input type="email" placeholder="Email Address (optional)" id="f-email"/>
+          <select id="f-service">
+            <option value="" disabled selected>Select a Service</option>
+            <option>General Check-up &amp; Cleaning</option>
+            <option>Teeth Whitening</option>
+            <option>Dental Filling</option>
+            <option>Root Canal Treatment</option>
+            <option>Orthodontics / Braces</option>
+            <option>Crowns &amp; Bridges</option>
+            <option>Dental Implants</option>
+            <option>Paediatric Dentistry</option>
+            <option>Other / Not Sure</option>
+          </select>
+          <input type="date" id="f-date"/>
+          <textarea placeholder="Any message, concern, or special request? (optional)" id="f-msg"></textarea>
+          <button class="btn-primary" onclick="submitForm()" type="button">
+            Request Appointment
+          </button>
+          <div class="form-success" id="form-success">
+            ✅ Thank you! We'll call you shortly to confirm your appointment.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footer-brand">
+    <img src="assets/logo.png" alt="Olive Dental Care"/>
+    <span>Olive Dental Care Pvt. Ltd.</span>
+  </div>
+  <p>© 2026 Olive Dental Care Pvt. Ltd. · Gokarneshwor, Kathmandu, Nepal</p>
+  <p><a href="mailto:olivedental2026@gmail.com">olivedental2026@gmail.com</a></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
