@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Replace the host values below with your actual website domain -->
+  <url>
+    <loc>https://www.olivedental.com.np/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.olivedental.com.np/services.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.olivedental.com.np/team.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.olivedental.com.np/why-us.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.olivedental.com.np/contact.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
