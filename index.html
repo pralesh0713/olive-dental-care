@@ -52,10 +52,11 @@
   </button>
 
   <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
     <li><a href="services.html">Services</a></li>
     <li><a href="why-us.html">Why Us</a></li>
     <li><a href="team.html">Our Doctor</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
     <li><a href="contact.html" class="nav-cta">Book Appointment</a></li>
   </ul>
 </nav>
@@ -65,22 +66,31 @@
      HERO
 ══════════════════════════════════════ -->
 <section class="hero" id="home">
-  <div class="hero-content">
-    <div class="hero-badge">Gokarneshwor, Kathmandu</div>
-    <h1>Your Smile,<br/>Our <em>Gentle</em> Care</h1>
-    <p>Trusted dental care for the whole family — combining modern techniques with a warm, comfortable environment so every visit feels easy.</p>
-    <div class="hero-actions">
-      <a href="contact.html" class="btn-primary">Book Appointment</a>
-      <a href="services.html" class="btn-outline">Our Services</a>
-    </div>
-    <!-- <div class="hero-stats">
-      <div class="stat"><span>500+</span><small>Happy Patients</small></div>
-      <div class="stat"><span>5+</span><small>Years of Service</small></div>
-      <div class="stat"><span>10+</span><small>Treatments</small></div>
-    </div> -->
+  <div class="hero-slider">
+    <div class="slide active"><img class="slide-hero1" src="assets/hero-1.jpg" alt="Dentist preparing dental tools for a patient"/></div>
+    <div class="slide"><img src="assets/hero-2.jpg" alt="Dental professional reviewing a patient's x-ray"/></div>
+    <div class="slide"><img src="assets/hero-3.jpg" alt="Modern dental clinic treatment room"/></div>
+    <div class="slide"><img src="assets/hero-4.jpg" alt="Friendly dental team welcoming a patient"/></div>
+    <div class="slide"><img src="assets/hero-5.jpg" alt="Patient smiling after dental treatment"/></div>
   </div>
+  <div class="hero-content">
+    <div class="hero-chip">Trusted by families in Kathmandu</div>
+    <h1>Gentle dental care<br/>for every smile.</h1>
+    <p>Olive Dental Care brings modern dentistry, orthodontics, whitening, and implant treatments in a warm, family-friendly clinic.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Book Appointment</a>
+      <a href="services.html" class="btn-outline">View Services</a>
+    </div>
+  </div>
+  <div class="hero-dots">
+    <button class="slide-dot active" aria-label="Show image 1"></button>
+    <button class="slide-dot" aria-label="Show image 2"></button>
+    <button class="slide-dot" aria-label="Show image 3"></button>
+    <button class="slide-dot" aria-label="Show image 4"></button>
+    <button class="slide-dot" aria-label="Show image 5"></button>
+  </div>
+  <div class="hero-progress" id="hero-progress"></div>
 </section>
-
 
 <!-- ══════════════════════════════════════
      EXPLORE
@@ -119,6 +129,89 @@
     </div>
   </div>
 </section>
+  <section id="contact">
+    <div class="reveal">
+      <span class="section-label">Visit Us</span>
+      <h2 class="section-title">Book Your Appointment</h2>
+      <p class="section-sub">Use the form below to request a visit, and our team will contact you to confirm the best available time.</p>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <h3>Visit Us</h3>
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <h5>Address</h5>
+            <address>Gokarneshwor-8, Kathmandu<br/>Bagmati Province, Nepal</address>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <h5>Phone</h5>
+            <p>
+              <a href="tel:+97701XXXXXXX">+977-9863314714</a><br/>
+              <a href="tel:+9779XXXXXXXXX">+977-9843489761</a>
+            </p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div>
+            <h5>Email</h5>
+            <p><a href="mailto:olivedental2026@gmail.com">olivedental2026@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">🕐</div>
+          <div>
+            <h5>Opening Hours</h5>
+            <table class="hours-table">
+              <tr><td>Sunday – Saturday</td></tr>
+              <tr><td>9:00 AM – 7:00 PM</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="map-wrap reveal">
+          <span>🗺️</span>
+          <p>Gokarneshwor-8, Kathmandu, Nepal</p>
+          <a href="https://maps.app.goo.gl/W4mNRPkaabusVkdQ7" target="_blank" rel="noopener">
+            View on Google Maps →
+          </a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="contact-form" id="appt-form">
+          <div class="form-row">
+            <input type="text" placeholder="Your Full Name *" id="f-name" required/>
+            <input type="tel" placeholder="Phone Number *" id="f-phone" required/>
+          </div>
+          <input type="email" placeholder="Email Address (optional)" id="f-email"/>
+          <select id="f-service">
+            <option value="" disabled selected>Select a Service</option>
+            <option>General Check-up &amp; Cleaning</option>
+            <option>Teeth Whitening</option>
+            <option>Dental Filling</option>
+            <option>Root Canal Treatment</option>
+            <option>Orthodontics / Braces</option>
+            <option>Crowns &amp; Bridges</option>
+            <option>Dental Implants</option>
+            <option>Paediatric Dentistry</option>
+            <option>Other / Not Sure</option>
+          </select>
+          <input type="date" id="f-date"/>
+          <textarea placeholder="Any message, concern, or special request? (optional)" id="f-msg"></textarea>
+          <button class="btn-primary" onclick="submitForm()" type="button">
+            Request Appointment
+          </button>
+          <div class="form-success" id="form-success">
+            ✅ Thank you! We'll call you shortly to confirm your appointment.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 
@@ -138,3 +231,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
